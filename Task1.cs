@@ -15,7 +15,7 @@ object b = 1;
 int c = int.Parse("asd");
 
 //4
-object d = b;
+int d = b;
 
 //5
 int e = int.Parse("1");
