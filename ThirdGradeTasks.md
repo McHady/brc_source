@@ -116,5 +116,5 @@ public class Worker
 
 d)
 ```csharp
-var getSringMethodInfo = this.GetType().GetMethods().FirstOrDefault(m => m.Name == "Get" && m.GenericType).MakeGenericMethod(new[] Type{ typeof(string) });
+var getStringMethodInfo = this.GetType().GetMethods().FirstOrDefault(m => m.Name == "Get" && m.GenericType).MakeGenericMethod(new[] Type{ typeof(string) });
 ```
