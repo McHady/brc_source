@@ -93,14 +93,14 @@ public abstract class Container
 
 b) 
 ```csharp
-var canceled = !this.context.TaskPool.GetNewest().IsActive;
+var isCanceled = !this.context.TaskPool.GetNewest().IsActive;
 ```
 
 c)
 ```csharp
 public class Worker
 {
-    public IEnumerable<IStatusReturnable> Holders {get; }  
+    public IEnumerable<IStatusReturnable> Holders { get; }  
     
     public string GetHolderStatuses 
     {
@@ -116,5 +116,5 @@ public class Worker
 
 d)
 ```csharp
-var getStringMethodInfo = this.GetType().GetMethods().FirstOrDefault(m => m.Name == "Get" && m.GenericType).MakeGenericMethod(new[] Type{ typeof(string) });
+var getStringMethodInfo = this.GetType().GetMethods().FirstOrDefault(m => m.Name == "Get" && m.IsGenericType).MakeGenericMethod(new[] Type{ typeof(string) });
 ```
