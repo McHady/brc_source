@@ -15,7 +15,7 @@ public class Expample
 
     internal protected void MethodE();
 
-    private protected void MethodF();
+    private internal void MethodF();
 }
 ```
 
