@@ -3,7 +3,7 @@
 Опишите различия видимости методов, представленных в нижепредствленном C#-классе.
 
 ```csharp
-public class Expample
+public class Example
 {
     public void MethodA();
 
